@@ -1,0 +1,38 @@
+body
+{
+	background-color:aqua;
+	background-image : url("back5.gif");
+	background-size : cover;
+}
+#content
+{
+	padding : 15px;
+	text-align : center;
+	border : 3px solid tan;
+	margin-left:30%;
+	margin-right:30%;
+	margin-top:10%;
+	background-color : Peru;
+}
+@media only screen and (max-width :750px)
+{
+	#content
+	{
+		font-size:18px;
+		margin-left:10%;
+		margin-right:10%;
+		margin-top:2%;
+	}
+}
+a
+{
+	font-size : 20px;
+	font-family :Comic Sans MS;
+	color : cyan;
+}
+p
+{
+	font-size : 20px;
+	font-family :Comic Sans MS;
+	color : linen;
+}

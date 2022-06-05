@@ -1,0 +1,112 @@
+body
+{
+	background-color:pink;
+}
+
+#writepost
+{
+	width: 100%;
+	height: 100%;
+	background-image: url("back10.gif");
+	background-position:cover;
+	opacity : 0.85;
+	border:3px solid black;
+	border-radius:6%;
+}
+#tit
+{
+
+	color:white;
+	font-size:35px;
+	top:3%;
+	opacity : 1;
+	
+	
+}
+#wp
+{
+
+
+}
+#title
+{
+	width:80%;
+	height:5%;
+	text-align:center;
+	font-family:Verdana;
+	font-size:25px;
+	color:blue;
+	opacity : 1;
+	
+	
+}
+b
+{
+	text-align:center;
+	color:red;
+	margin-left:50px;
+	margin-right:20px;
+	opacity : 1;
+}
+
+#taginpu
+{
+	height:5%;
+	 width:30%;
+	 opacity : 1;
+	 text-align : center;
+	 font-size : 24px;
+}
+#art
+{
+	height:52%;
+	width:80%;
+	font-family:Tw Cen MT;
+	font-size:22px;
+	border: 10px solid white;
+	border-radius : 10px ;
+	resize: none;
+	opacity : 1;
+	
+}
+#subp
+{
+	height:7%;
+	width:25%;
+	font-family:Tw Cen MT;
+	font-size:22px;
+	border: 5px solid orange;
+	background : rgba(0,0,0,0);
+	color : white;
+	opacity : 1;
+}
+#subp:hover
+{
+	color: black;
+	background-color: orange;
+}
+
+@media only screen and (max-width: 900px)
+{
+	#title,#taginpu,#art{
+		width : 100%;
+	}
+	#art{
+		font-size : 15px;
+	}
+	#title{
+		font-size : 18px;
+	}
+	#taginpu{
+		font-size : 16px;
+	}
+	#subp{
+		width : 50%;
+	}
+}
+
+	
+	
+	
+	
+	

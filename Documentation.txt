@@ -1,0 +1,45 @@
+
+Merit:
+From users Table
+new post  merit +100
+upfeed +10
+downfeed -10
+******************************************************************************
+Trending : 
+From tag Table
+Show Articles from top 3 most common tags
+******************************************************************************
+Upfeed and Downfeed mechnaism :
+
+
+IMPORTANT DOCUMENTATION:
+This page has been designed for functionality of LIKE and DISLIKE buttons/component
+
+REQUIREMENTS:
+1. TABLES
+1.1 users [table] [To Store which all articles were liked by the user]
+1.1.1 userid int [collumn]
+1.1.2 upfeed varchar(500) [collumn]
+1.1.3 downfeed varchar(500) [collumn]
+1.2 article [table] [To Store total up and down feeds]
+1.1.1 articleid int [collumn]
+1.1.2 upfeed int [collumn]
+1.1.3 downfeed int [collumn]
+2. Active Session
+2.1 $_SESSION['id'] Storing Userid from user table
+3. Ajax Call consisting of:
+3.1 $_GET['upfeed']/$_GET['downfeed'] set to any value ......any one
+3.2 $_GET['prev'] 	Storing Previous value whether it was previously 'upfeed' or 'downfeed' or 'null'
+3.3 $_GET['article'] Storing article id
+
+RETURN VALUE :
+Return value consists of 3 space seperated integers or say a string of three integers Eg. 1 0 5
+1. First Integer : [-1/0/1] 
+1.1 [-1] Means an attempt to like/dislike article more than once
+1.2 [0]	 Means transaction  falied
+1.3 [1]  Means transaction successful
+2. Second Integer : [Any number] Means total no of Likes/UpFeeds
+3. Third Integer : [Any number] Means total no of Dislikes/DownFeeds
+
+
+

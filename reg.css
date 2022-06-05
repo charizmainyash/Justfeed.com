@@ -1,0 +1,108 @@
+body
+{
+	background-image:url(back7.gif);
+	background-size:cover;
+}
+a
+{
+	font-size : 20px;
+	font-family :Comic Sans MS;
+	color : white;
+
+}
+a:hover
+{
+	color:red;
+}
+#content
+{
+	padding : 8px;
+	margin-left:30%;
+	margin-right:30%;
+	margin-top:3%;
+	text-align : center;
+	border : 3px solid navy;
+	border-radius:10%;
+	background-image: linear-gradient(to bottom,black,firebrick,red,peachpuff);
+	opacity : 0.85;
+	
+}
+
+
+@media only screen and (max-width:900px)
+{
+	#content{
+		margin-left:1%;
+		margin-right:1%;
+		margin-top:2%;
+		font-size:65%;
+		}
+	table{
+		border-collapse:separate;
+		border-spacing:0px 25px;
+	}
+
+
+}
+
+p
+{
+	font-size : 20px;
+	font-family :Comic Sans MS;
+	color : indigo;
+}
+table{
+	
+	border-collapse:separate;
+	border-spacing:0px 25px;
+
+}
+td
+{
+	text-align:right;
+
+	color:white;
+	
+
+}
+#i
+{	
+	width:10%;
+	text-align:left;
+	padding-left:2%;
+}
+#pic
+{
+	text-align:left;
+	padding-left:2%;
+}
+input
+{
+	font-size:16px;
+}
+select
+{
+	font-size:16px;
+}
+#sub 
+{
+	width:80%;
+	height:8%;
+	background-color : salmon;
+	color : darkred;
+	font-size : 20px;
+	font-family :Comic Sans MS;
+	margin :10px80
+#sub:hover
+{
+	color : white;
+	background-color : orange;
+}
+
+#email{
+	width : 98%;
+}
+
+#pass{
+	width : 90%;
+}

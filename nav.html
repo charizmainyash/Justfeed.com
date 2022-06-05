@@ -1,0 +1,31 @@
+<head>
+	<meta name="theme-color" content="#33363b">
+	<style>
+	#justfeed:hover
+	{
+		background-color:peachpuff;
+		color:darkgreen;
+	}
+	</style>	
+</head>
+<div id="navbar">
+	<font id="justfeed" onclick="window.location ='login.php' ">JustFeed</font>
+	<a href="contact.php"><img src='Background/contacticon.jpg' class="navicon"></a>
+	<a href="about.php"><img src='Background/abouticon.jpg' class="navicon"></a>
+	<a href="search.php"><img src='Background/trendingicon.jpg' class="navicon"></a>
+	<a href="login.php"><img src='Background/homeicon.jpg' class="navicon"></a>
+	<a href="contact.php"><button class='navbutton'>Reach Us</button></a>
+	<a href="about.php"><button class='navbutton'>About Us</button></a>
+	<a href="search.php"><button class='navbutton'>Trending</button></a>
+	<a href="login.php"><button class='navbutton'>Home</button></a>
+</div>
+
+
+
+<div id="sidebar">
+	<img src="Photo\<?php echo$data[6]; ?>" class="sideicon"> </img>
+	<p><?php echo$data[0] ?> </p>
+	<a href="viewP.php"><img src='Background/profile.jpg' class="sideicon" title="View Profile"></a>
+	<a href="post.php"><img src='Background/post.jpg' class="sideicon" title="Write a Post"></a>
+	<a href="log.php" onclick="return confirm('Confirm Logout.');"><img src='Background/logout.jpg' class="sideicon" title="Logout"></a>
+</div>

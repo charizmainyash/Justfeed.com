@@ -1,0 +1,101 @@
+#profile_pic{
+	width : 100%;
+	height : 100%;
+	border-radius : 100%;
+}
+
+
+.circle{
+	width : 14%;
+	height : 22%;
+	float : left;
+	border-radius: 45%;
+	background-color : rgba(0,0,0,50%);
+	text-align : center;
+	color : white;
+	overflow : hidden;
+}
+
+.circle:hover{
+	background-color : rgba(0,255,0,50%);
+}
+
+.back{
+	width : 100%;
+	height : 100%;
+	border-radius : 100%;
+	z-index : -1;
+}
+
+.circle_text{
+	position : relative;
+	top : -120%;
+	font-weight: bold;
+	font-size : 300%;
+}
+
+.namefield{
+	float:left;
+	width : 40%;
+	height : 5%;
+	text-align : center;
+	margin : 1%;
+	font-size : 120%;
+	font-weight: bold;
+	background-color: white;
+	margin-left : 4%;
+}
+
+.namefield:hover{
+	background-color : black;
+	color : white;
+}
+
+.datafield{
+	float:left;
+	width : 40%;
+	height : 5%;
+	text-align : center;
+	margin : 1%;
+	font-size : 120%;
+	font-weight: bold;
+	background-color: white;
+}
+
+.datafield:hover{
+	background-color : black;
+	color : white;
+}
+
+input[type='button']
+{
+	background-color : green;
+	color:white;
+}
+
+@media only screen and (max-width: 600px)
+{
+	.circle{
+		width : 47%;
+	}
+	
+	.namefield{
+		width : 100%;
+		margin : 0px;
+		margin-top : 1%;
+		font-size : 100%;
+		text-align: left; 
+	}
+
+	.datafield{
+		width : 100%;
+		margin : 0px;
+		margin-bottom : 1%;
+		font-size: 80%;
+	}
+
+	input[type='button']{
+		text-align:center;
+		margin : 1%;
+	}
+}

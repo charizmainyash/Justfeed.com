@@ -1,0 +1,209 @@
+body
+{
+	background-size : cover;
+	overflow : hidden;
+	background : url("Background/gg.jpg") 0 0;
+	font-family : cursive;
+	scroll-behavior: smooth;
+}
+
+
+#navbar
+{
+	width : 100%;
+	position : fixed;
+	top:0;
+	left:0;
+	height : 8%;
+	background-color: black;
+	opacity : 0.7;
+	color : white;
+	font-weight: bold;
+	font-size : 280%;
+	overflow : hidden;
+	z-index : 5;
+}
+#poo
+{
+	color:white;
+}
+#poo:hover
+{
+	color:red;
+	background-color:white;
+}
+
+.navbutton
+{
+	height : 100%;
+	width : 7%;
+	float : right;
+	color : white;
+	border: none;
+	background-color : black;
+	color : white;
+	padding : 1%;
+	font-weight : bold;
+	overflow:hidden;
+}
+
+.navbutton:hover{
+	background-color : green;
+}
+
+.navicon{
+	height:100%;
+	display:none;
+	float:right;
+	border:none;
+	margin-left:2%;
+}
+
+@keyframes move_right{
+	from{
+		left:-6%;
+	}
+	to{
+		left:0%;
+	}
+}
+
+#sidebar
+{
+	width : 6%;
+	padding : 3px;
+	top:10%;
+	left:0;
+	position : fixed;
+	height : 80%;
+	background-color: white;
+	white-space: wrap;
+	font-size: 120%;
+	font-weight:bold;
+	font-family: monospace;
+	text-align:center;
+	animation : move_right;
+	animation-duration: 2s;
+	opacity:0.7;
+	overflow-wrap: break-word;
+	z-index : 5;
+}
+#sidebar:hover
+{	
+	background-color:Lavender;
+}
+
+.sideicon{
+	width:100%;
+	margin-bottom:7%;
+	border: none;
+
+}
+
+
+@keyframes rise{
+	from{
+		height : 0;
+	}
+	to{
+		height: 90%;
+	}
+}
+
+
+#mainfeed{
+	width : 93%;
+	margin-top : 3%;
+	float : right;
+	height : 90%;
+	padding : 1%;
+	overflow : auto;
+	white-space: wrap;
+	animation : rise;
+	animation-duration: 1s;
+}
+		
+.feed{
+	width : 28%;
+	height : 35%;
+	float : left;
+	//border-top : 20px solid black;
+	//border-bottom : 20px solid black;
+	border-radius:3%;
+	//background-color: rgba(0,0,0,85%);
+	background-image: linear-gradient(to bottom,black,grey,silver,powderblue);
+	color: white;
+	box-shadow: 2px 2px 2px grey;
+	margin : 1%;
+	padding : 1%;
+	opacity : 0.9;
+}
+
+@media only screen and (max-width:800px)
+{
+	#justfeed{
+		font-size:70%;
+	}
+	
+	#subser
+	{
+		font-size:80%;
+		
+	}
+	#mainfeed{
+		width:85%;
+		margin-top:10%;
+	}
+
+	.feed{
+		width:100%;
+		margin:0;
+		margin-bottom:3%;
+	}
+
+	#navbar{
+		height:6%;
+	}
+
+	.navbutton{
+		width : 12%;
+		margin-left: 1%;
+		height:90%;
+		padding : 0;
+	}
+
+	.navbutton{	display:none;	}
+	.navicon{	display:block;	}
+
+	#sidebar{
+		width:11%;
+		top: 8%;
+	}
+}
+
+#tt
+{
+	text-align:center;
+	font-size:18px;
+	overflow:auto;
+}
+#taag
+{
+	color:red;
+	font-size:16px;
+}
+#poo
+{
+	margin-left:28%;
+	font-size:28;
+	font-family: DejaVu Sans Mono;
+	font-weight : bold;
+	border:2px solid white;
+	color:ivory;
+}
+
+#gifloading{
+	height : 100%;
+}
+
+
